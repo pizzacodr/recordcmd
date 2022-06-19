@@ -12,6 +12,6 @@ filename=$dateStamp.flac
 
 ffmpeg -f alsa -ar 48000 -ac 1 -i hw:1 -t $1 $filename
 
-gsutil cp $filename gs://brbc_files
+gsutil cp $filename gs://
 
 mv -v $filename backup
