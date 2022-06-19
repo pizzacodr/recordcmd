@@ -1,0 +1,8 @@
+[Unit]
+Description=Timer that turns on the fullness of the drive
+
+[Timer]
+OnCalendar=*-*-* 12:00:00 America/New_York
+
+[Install]
+WantedBy=timers.target

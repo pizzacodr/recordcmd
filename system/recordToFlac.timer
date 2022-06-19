@@ -1,0 +1,8 @@
+[Unit]
+Description=Timer for the audio in to FLAC File
+
+[Timer]
+OnCalendar=*-*-* 12:15:00 America/New_York
+
+[Install]
+WantedBy=timers.target

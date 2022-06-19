@@ -1,0 +1,9 @@
+[Unit]
+Description=check how full the drive is
+
+[Service]
+ExecStart=/opt/recordcmd/checkFullnessDrive.sh
+StandardOutput=file:/var/log/checkFullnessDrive.out.txt
+StandardError=file:/var/log/checkFullnessDrive.err.txt
+Type=oneshot
+WorkingDirectory=/opt/recordcmd

@@ -1,0 +1,9 @@
+[Unit]
+Description=record the audio in to a FLAC file using ffmpeg
+
+[Service]
+ExecStart=/opt/recordcmd/recordToFlac.sh
+StandardOutput=file:/var/log/recordToFlac.out.txt
+StandardError=file:/var/log/recordToFlac.err.txt
+Type=oneshot
+WorkingDirectory=/opt/recordcmd
